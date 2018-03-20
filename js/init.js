@@ -102,7 +102,7 @@
 /*	Modal Popup
 ------------------------------------------------------*/
 
-    $('.item-wrap a').magnificPopup({
+    $('.portfolio-block a').magnificPopup({
 
        type:'inline',
        fixedContentPos: false,
@@ -152,7 +152,7 @@
       $.ajax({
 
 	      type: "POST",
-	      url: "inc/sendEmail.php",
+	      url: "inc/sendEmail.php", //pretty sure I should put my email here
 	      data: data,
 	      success: function(msg) {
 
@@ -161,7 +161,7 @@
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();   
+               $('#message-success').fadeIn();
             }
             // There was an error
             else {
@@ -176,13 +176,4 @@
       return false;
    });
 
-
 });
-
-
-
-
-
-
-
-

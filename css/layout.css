@@ -244,6 +244,7 @@ ul#nav li.current a { color: red; }
 }
 #about .download .button:hover {
    background: #fff;
+   background: red;
    color: #2B2B2B;
 }
 #about .download .button i {
@@ -430,16 +431,44 @@ ul#nav li.current a { color: red; }
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
+.proj-grey {
+  color: #606060 !important;
+}
+
+.proj-subtitle {
+  text-decoration: underline;
+}
+
+/* .proj-link-description {
+  text-decoration: underline;
+} */
+
+.portfolio-block a {
+  text-decoration: none !important;
+}
+
+.proj-title {
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif !important;
+  text-decoration: none !important;
+}
+
+.proj-desc {
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif !important;
+  text-decoration: none !important;
+}
 
 .proj-desc,
 .proj-title {
   position: relative;
-  left: 3%;
+  left: 6%;
+  top: 18px;
 }
 
 .icon-plus {
   margin: 0 auto;
-  font-size: 2em;
+  font-size: 20px;
   position: relative;
   left: 45%;
   top: 20% !important;
@@ -463,6 +492,7 @@ ul#nav li.current a { color: red; }
 }
 
 .testing-overlay {
+  color: transparent;
   background-color: transparent;
   height: 100%;
   width: 108%;
@@ -471,8 +501,9 @@ ul#nav li.current a { color: red; }
 }
 
 .testing-overlay:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white
+  background-color: rgba(0, 0, 0, 0.8);
+  /* color: white; */
+  color: red;
 }
 
 .p-1:hover,
@@ -494,7 +525,7 @@ ul#nav li.current a { color: red; }
 }
 
 .p-2 {
-  background-image: url('../images/portfolio/tic-tac-toe.jpg');
+  background-image: url('../images/portfolio/npcHub2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -522,6 +553,24 @@ ul#nav li.current a { color: red; }
   right: 5%;
   border: 1px solid black;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.popup-modal-dismiss {
+  margin-left: -14px !important;
+}
+
+@media (max-width: 965px) {
+  .testing-overlay {
+    width: 110%;
+    left: -5%;
+  }
+}
+
+@media (max-width: 795px) {
+  .testing-overlay {
+    width: 111%;
+    left: -5.5%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -560,6 +609,11 @@ ul#nav li.current a { color: red; }
 
   .p-4 {
     left: 1%;
+  }
+
+  .testing-overlay {
+    width: 111%;
+    left: -5.5%;
   }
 
 }
@@ -706,7 +760,8 @@ ul#nav li.current a { color: red; }
    letter-spacing: 3px;
    cursor: pointer;
 }
-.popup-modal a:hover {	color: #00CCCC; }
+/* .popup-modal a:hover {	color: #00CCCC; } */
+.popup-modal a:hover {	color: red; }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
 
 
@@ -1026,7 +1081,8 @@ call-to-action .button {
 }
 #contact button.submit:hover {
 	color: #0D0D0D;
-	background: #fff;
+	/* background: #fff; */
+  background: red;
 }
 #contact span.required {
 	color: #11ABB0;
@@ -1088,7 +1144,8 @@ footer {
 }
 
 footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
+/* footer a:hover, footer a:focus { color: #fff; } */
+footer a:hover, footer a:focus { color: red; }
 
 /* copyright */
 footer .copyright {
@@ -1132,10 +1189,10 @@ footer .social-links li:first-child { margin-left: 0; }
 
 /* Go To Top Button */
 #go-top {
-	position: absolute;
-	top: -24px;
-   left: 50%;
-   margin-left: -30px;
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  margin-left: -30px;
 }
 #go-top a {
 	text-decoration: none;
@@ -1154,6 +1211,7 @@ footer .social-links li:first-child { margin-left: 0; }
    color: #fff;
    font-size: 21px;
    line-height: 60px;
- 	border-radius: 100%;
+ 	 border-radius: 100%;
 }
-#go-top a:hover { background-color: #0F9095; }
+/* #go-top a:hover { background-color: #0F9095; } */
+#go-top a:hover { background-color: red; }
