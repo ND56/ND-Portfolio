@@ -85,8 +85,8 @@ header .banner-text h3 {
 header .banner-text h3 span,
 header .banner-text h3 a {
    /* color: #fff; */
-   /* color: black; */
-   color: #5B5959;
+   color: black;
+   /* color: #5B5959; */
    /* color: red; */
    /* color: orange; */
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
@@ -430,6 +430,139 @@ ul#nav li.current a { color: red; }
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
+
+.proj-desc,
+.proj-title {
+  position: relative;
+  left: 3%;
+}
+
+.icon-plus {
+  margin: 0 auto;
+  font-size: 2em;
+  position: relative;
+  left: 45%;
+  top: 20% !important;
+}
+
+.icon-plus:before {
+  margin-top: 21%;
+  margin-bottom: 25%;
+}
+
+.portfolio-block {
+  height: 325px;
+  position: relative;
+}
+
+.p-1,
+.p-2,
+.p-3,
+.p-4 {
+  color: transparent;
+}
+
+.testing-overlay {
+  background-color: transparent;
+  height: 100%;
+  width: 108%;
+  position: relative;
+  left: -4%;
+}
+
+.testing-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white
+}
+
+.p-1:hover,
+.p-2:hover,
+.p-3:hover,
+.p-4:hover {
+
+}
+
+.p-1 {
+  background-image: url('../images/portfolio/tic-tac-toe.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 5%;
+  margin-bottom: 5%;
+  border: 1px solid black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.p-2 {
+  background-image: url('../images/portfolio/tic-tac-toe.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 5%;
+  margin-bottom: 5%;
+  border: 1px solid black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.p-3 {
+  background-image: url('../images/portfolio/tic-tac-toe.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 5%;
+  border: 1px solid black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.p-4 {
+  background-image: url('../images/portfolio/tic-tac-toe.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 5%;
+  border: 1px solid black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@media (max-width: 767px) {
+  .p-0 {
+    height: 0px !important;
+    width: 0px !important;
+  }
+
+  .p-0-1 {
+    height: 0px !important;
+    width: 0px !important;
+  }
+
+  .p-1,
+  .p-2,
+  .p-3,
+  .p-4 {
+    height: 350px !important;
+    width: 350px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 25px !important;
+  }
+
+  .p-1 {
+    left: 1%;
+  }
+
+  .p-2 {
+    left: 1%;
+  }
+
+  .p-3 {
+    left: 1%;
+  }
+
+  .p-4 {
+    left: 1%;
+  }
+
+}
 
 #portfolio {
    background: #ebeeee;
