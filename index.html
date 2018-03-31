@@ -183,9 +183,9 @@
               <div class="portfolio-block p-1 col-sm-5"><a href="#modal-01" title=""><div id="overlay1" class="testing-overlay"><span class="proj-title">Tic-Tac-Toe</span><br /><span class="proj-desc">Front-End &amp; Game Logic</span><div class="link-icon"><i class="icon-plus"></i></div></div></a></div>
                   <div class="portfolio-block p-0 col-sm-2"></div>
               <div class="portfolio-block p-2 col-sm-5"><a href="#modal-02" title=""><div id="overlay2" class="testing-overlay"><span class="proj-title">npcHub</span><br /><span class="proj-desc">Front-End &amp; Back-End</span><div class="link-icon"><i class="icon-plus"></i></div></div></a></div>
-              <div class="portfolio-block p-3 col-sm-5"><a href="#modal-03" title=""><div id="overlay3"class="testing-overlay"><span class="proj-title">Tic-Tac-Toe</span><br /><span class="proj-desc">Front-End &amp; Game Logic</span><div class="link-icon"><i class="icon-plus"></i></div></div></a></div>
+              <div class="portfolio-block p-3 col-sm-5"><a href="#modal-03" title=""><div id="overlay3"class="testing-overlay"><span class="proj-title">Clique</span><br /><span class="proj-desc">Front-End &amp; Back-End (Group Project)</span><div class="link-icon"><i class="icon-plus"></i></div></div></a></div>
                   <div class="portfolio-block p-0-1 col-sm-2"></div>
-              <div class="portfolio-block p-4 col-sm-5"><a href="#modal-04" title=""><div id="overlay4" class="testing-overlay"><span class="proj-title">Tic-Tac-Toe</span><br /><span class="proj-desc">Front-End &amp; Game Logic</span><div class="link-icon"><i class="icon-plus"></i></div></div></a></div>
+              <div class="portfolio-block p-4 col-sm-5"><a href="#modal-04" title=""><div id="overlay4" class="testing-overlay"><span class="proj-title">Capstone</span><br /><span class="proj-desc">Front-End &amp; Back-End</span><div class="link-icon"><i class="icon-plus"></i></div></div></a></div>
             </div>
             <!--
           	   <div class="columns portfolio-item">
@@ -287,15 +287,15 @@
 
 		      <div class="description-box">
 			      <h4>npcHub</h4>
-            <p class="proj-grey proj-subtitle">Background: Dungeons &amp; Dragons ("D&D")</p>
-            <p class="proj-grey">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <p class="proj-grey proj-subtitle">Background: Dungeons &amp; Dragons ("D&amp;D")</p>
+            <p class="proj-grey">To understand the utility of npcHub (and it's moniker), one must first have a basic understanding of the classic tabletop game commonly known as D&amp;D.<br /><br />D&amp;D is a role-playing game ("RPG") in which a group of people come together to play characters---i.e., "player characters," or, "PCs"---in a game created by an individual known as the Dungeon Master ("DM").<br /><br />While DMs often have many tools at their disposal to construct the world in which the PCs will play their game, it is an incredibly onerous task. The DM is responsible for creating civilizations, cultures, monsters, pantheons, and---finally---every person that exists in that world aside from the PCs.<br /><br />This last category is commonly referred to as "non-player characters," or "NPCs"---and that's where npcHub comes into play! As I expand on below, my app is designed to alleviate some of the burden that DMs face in creating their worlds, allowing for faster game-building and more D&amp;D-playing.</p>
             <p class="proj-grey proj-subtitle">Overview</p>
-            <p class="proj-grey">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <p class="proj-grey">npcHub is a place for DMs to create, share, and validate other DM's NPCs.<br /><br />I created a standard one-to-many relationship between users and NPCs to allow for DMs to CRUD NPC resources. This has many uses for DMs; one use is that it allows DMs to store their NPCs somewhere and they can come back to them and reuse them in future D&amp;D adventures (i.e., DMs can keep them organized).<br /><br />Another big part of why this app is useful is its search functionality and its ability for DMs to not only manage their own NPCs, but to share NPCs with eachother. The current iteration of the app allows DMs to view all public NPCs (the app has an option to set NPCs to private), as well as to search through NPCs based on a number of criteria (including NPC name, class, race, level, challenge rating, and NPC creator).<br /><br />In this current iteration, the search functionality operates mostly based on exact equivalence between the search parameters and the NPC attribute; however, two exceptions are searches by race and searches by class---which are somewhat more robust. Both of these searches make use of stored arrays of classes, subclasses, races, and subraces and will return all NPCs falling within one of those arrays if the user's search parameter also falls within one of the arrays. In other words, a search for "Elf" will return all variations of Elves (e.g., Drow, Eladrin, etc.) and a search for "Wizard" will return all variations of Wizard (e.g., Illusionist, Necromancer, etc.).<br /><br />In the final stages of this iteration, I implemented a "like" functionality. The idea dawned on me after I asked some friends to make a few NPCs to get my database started and I subsequently found myself repeatedly checking back to see what they updated. I realized that the hope of a "reward" kept me coming back to my deployed app and it struck me that this was much like social media, which---whether we want to admit it or not---many of us use because of the lottery-like rewards that come in the form of "likes" and "follows."<br /><br />Realizing that this could draw more users to my app, I decided to implement a many-to-many relationship between users and NPCs through a new resource aptly named "likes." In this current iteration, when viewing other DMs' NPCs (DMs cannot "like" their own NPCs), DMs can "like" those NPCs (DMs can only "like" an NPC once) and the UI provides a readout of how many times each NPC has been liked. In addition, every user's home page has a display of the two NPCs that have garnered the most likes. In addition to being a tool that can draw more DMs to my app, I think this also serves the dual purpose of allowing DMs to validate eachother's NPCs and to draw the best of the group to the attention of other users---making my app that much more effective in its purpose. After all, better NPCs will yield better D&amp;D gameplay.</p>
             <p class="proj-grey proj-subtitle">Links</p>
-            <p><span class="proj-link-description proj-grey">Front-End Repo</span>: <a href="https://github.com/ND56/NPC-Organizer_Client">https://github.com/ND56/NPC-Organizer_Client</a></p>
-            <p><span class="proj-link-description proj-grey">Deployed Front-End</span>: <a href="https://nd56.github.io/NPC-Organizer_Client/">https://nd56.github.io/NPC-Organizer_Client/</a></p>
-            <p><span class="proj-link-description proj-grey">Back-End Repo</span>: <a href="https://github.com/ND56/NPC-Organizer_API">https://github.com/ND56/NPC-Organizer_API</a></p>
-            <p><span class="proj-link-description proj-grey">Deployed Back-End</span>: <a href="https://npc-organizer.herokuapp.com/">https://npc-organizer.herokuapp.com/</a></p>
+            <p><span class="proj-link-description proj-grey">Front-End Repo</span>: <a href="https://github.com/FiniteL00p/pctr">https://github.com/FiniteL00p/pctr</a></p>
+            <p><span class="proj-link-description proj-grey">Deployed Front-End</span>: <a href="https://finitel00p.github.io/pctr/">https://finitel00p.github.io/pctr/</a></p>
+            <p><span class="proj-link-description proj-grey">Back-End Repo</span>: <a href="https://github.com/FiniteL00p/pctr_api">https://github.com/FiniteL00p/pctr_api</a></p>
+            <p><span class="proj-link-description proj-grey">Deployed Back-End</span>: <a href="https://file-bucket-api.herokuapp.com/">https://file-bucket-api.herokuapp.com/</a></p>
                <span class="categories proj-grey"><i class="fa fa-tag"></i>JavaScript, jQuery, AJAX, Handlebars, Ruby, Rails, postgreSQL, SQL</span>
 		      </div>
 
@@ -307,12 +307,24 @@
 
          <div id="modal-03" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
+		      <img class="scale-with-grid" src="images/portfolio/Clique.png" alt="" />
 
-		      <div class="description-box">
-			      <h4>Judah</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
+          <div class="description-box">
+			      <h4>Clique</h4>
+            <p class="proj-grey proj-subtitle">Overview</p>
+            <p class="proj-grey">My two team members and I were tasked with building an application that would allow users to upload files; a plain, utilitarian app, aptly titled "fileBucket." However, after getting started, we quickly realized that we wanted to build something that had more character, that was fun and unique, and that would challenge us more. Thus, "Clique" was born! Inspired by social media apps like instagram and snapchat, Clique is an app that allows users to upload and share photogtaphs with eachother. Unlike existing social media apps, though, users' feeds are not populated based on a friend list. Instead, we thought it would be neat to build a social media app that connected people based on geographical location. To that end, we utilized multiple third party APIs to populate an image carousel (i.e., the user's feed) by comparing the geographical location of uploaded images with the user's current location. It was a blast to develop and we hope you check it out---and share it with your friends!</p>
+            <p class="proj-grey proj-subtitle">Third Party APIs</p>
+            <ul>
+              <li>Amazon's AWS-SDK API (for uploading image files)</li>
+              <li>Geolocation API (for client geolocation)</li>
+              <li>GeoLib API (for image geolocation)</li>
+            </ul>
+            <p class="proj-grey proj-subtitle">Links</p>
+            <p><span class="proj-link-description proj-grey">Front-End Repo</span>: <a href="https://github.com/ND56/NPC-Organizer_Client">https://github.com/ND56/NPC-Organizer_Client</a></p>
+            <p><span class="proj-link-description proj-grey">Deployed Front-End</span>: <a href="https://nd56.github.io/NPC-Organizer_Client/">https://nd56.github.io/NPC-Organizer_Client/</a></p>
+            <p><span class="proj-link-description proj-grey">Back-End Repo</span>: <a href="https://github.com/ND56/NPC-Organizer_API">https://github.com/ND56/NPC-Organizer_API</a></p>
+            <p><span class="proj-link-description proj-grey">Deployed Back-End</span>: <a href="https://npc-organizer.herokuapp.com/">https://npc-organizer.herokuapp.com/</a></p>
+               <span class="categories proj-grey"><i class="fa fa-tag"></i>JavaScript, jQuery, AJAX, Handlebars, Node, Express, Mongoose, MongoDB, AWS s3</span>
 		      </div>
 
             <div class="link-box">
@@ -355,9 +367,7 @@
 
             <div class="ten columns">
 
-                  <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                  voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                  <p class="lead">If you have any questions or are interested in hiring me, please shoot me an email and let me know!
                   </p>
 
             </div>
@@ -418,15 +428,15 @@
 
 					   <h4>Address and Phone</h4>
 					   <p class="address">
-						   Jonathan Doe<br>
-						   1600 Amphitheatre Parkway <br>
-						   Mountain View, CA 94043 US<br>
-						   <span>(123) 456-7890</span>
+						   Nicholas Drew<br>
+						   30 Brainard Ave., Apartment 107 <br>
+						   Medford, MA 02215 US<br>
+						   <span>(857) 472-8334</span>
 					   </p>
 
 				   </div>
 
-               <div class="widget widget_tweets">
+               <!-- <div class="widget widget_tweets">
 
                   <h4 class="widget-title">Latest Tweets</h4>
 
@@ -449,7 +459,7 @@
                      </li>
                   </ul>
 
-		         </div>
+		         </div> -->
 
             </aside>
 
