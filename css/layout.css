@@ -33,6 +33,18 @@ body { background: #0f0f0f; }
   margin-bottom: 6%;
 }
 
+.new-pic-container {
+  margin-right: 8%;
+}
+
+.new-profile-pic {
+  border-radius: 6px;
+}
+
+.sora-header {
+  margin-top: 30%;
+}
+
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
