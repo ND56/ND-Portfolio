@@ -39,6 +39,8 @@ body { background: #0f0f0f; }
 
 .new-profile-pic {
   border-radius: 6px;
+  border: 1px solid white;
+  padding: 4px;
 }
 
 .sora-header {
