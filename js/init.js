@@ -137,7 +137,9 @@
 /*	contact form
 ------------------------------------------------------*/
 
-   $('form#contactForm button.submit').click(function() {
+   $('form#contactForm button.submit').click(function(event) {
+
+     event.preventDefault()
 
       $('#image-loader').fadeIn();
 
@@ -149,7 +151,9 @@
       var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
                '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
 
-      $.ajax({
+      console.log(data)
+
+      return $.ajax({
 
 	      type: "POST",
 	      url: "inc/sendEmail.php",
@@ -173,7 +177,6 @@
 	      }
 
       });
-      return false;
    });
 
 });
